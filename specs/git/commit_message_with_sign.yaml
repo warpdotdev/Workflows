@@ -1,0 +1,14 @@
+---
+name: Commit message with sign
+command: git commit -S -s -m "{{message}}"
+tags:
+  - git
+description: "Creates a GPG-signed git commit. This will fail unless you previously a git signingkey."
+arguments:
+  - name: message
+    description: Commit message
+    default_value: ~
+source_url: "https://nickjanetakis.com/blog/signing-and-verifying-git-commits-on-the-command-line-and-github"
+author: Nick Janetakis
+author_url: "https://nickjanetakis.com/about"
+shells: []
